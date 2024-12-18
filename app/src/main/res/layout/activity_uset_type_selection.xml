@@ -1,0 +1,36 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ADD8E6"
+    tools:context=".UsetTypeSelectionActivity">
+
+    <Button
+        android:id="@+id/btnPassenger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Патник"
+        android:backgroundTint="#FFA500"
+        android:textColor="#FFFFFF"
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnDriver"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <Button
+        android:id="@+id/btnDriver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Возач"
+        android:backgroundTint="#32CD32"
+        android:textColor="#FFFFFF"
+        android:padding="16dp"
+        app:layout_constraintStart_toEndOf="@id/btnPassenger"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
